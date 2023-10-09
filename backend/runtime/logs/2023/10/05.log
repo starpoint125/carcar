@@ -1,0 +1,431 @@
+2023-10-05 17:47:29 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+    in D:\wamp64\www\feehinew\backend\views\site\index.php:262
+    in D:\wamp64\www\feehinew\backend\controllers\SiteController.php:99
+2023-10-05 17:47:29 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+2023-10-05 17:47:29 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'k1vdde45n059g7rg4g6jiff1gs'
+    '_csrf' => '077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM\";}'
+    'BACKEND_FEEHICMS' => 'kb0me5telom8nmvqkt4e1s0i37'
+    '_csrf_backend' => '0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => 'http://car.cso123.com/admin/index.php'
+    '__captcha/site/captcha' => 'qith'
+    '__captcha/site/captchacount' => 1
+    '_create_referer' => 'http://car.cso123.com/admin/index.php?r=user-details%2Findex&userid=1&bdcar=1'
+    '_update_referer' => 'http://car.cso123.com/admin/index.php?ManagementSearch%5Bname%5D=&ManagementSearch%5Bavatar%5D=&ManagementSearch%5Bcartype_id%5D=&ManagementSearch%5Btype%5D=&ManagementSearch%5Bseat_num%5D=&ManagementSearch%5Bdoor_num%5D=&ManagementSearch%5Bgear_position%5D=&ManagementSearch%5Bstatus%5D=&ManagementSearch%5Brecommend%5D=&ManagementSearch%5Bcreated_at%5D=&r=management%2Findex'
+    '__backend__id' => 1
+    '__authKey' => 'zr9mY7lt23oAhj_ZYjydbLJKcbE3FJ19'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'car.cso123.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 SE 2.X MetaSr 1.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://car.cso123.com/admin/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=k1vdde45n059g7rg4g6jiff1gs; _csrf=077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM%22%3B%7D; BACKEND_FEEHICMS=kb0me5telom8nmvqkt4e1s0i37; _csrf_backend=0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5%22%3B%7D'
+    'PATH' => 'D:\\install\\VMware\\VMware Workstation\\bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\soft\\Sublime Text3\\;D:\\install\\Java\\jdk1.8.0_211\\bin;D:\\install\\Java\\jre;D:\\wamp\\bin\\php\\php7.3.5;C:\\WINDOWS\\System32\\OpenSSH\\;d:\\install\\Python37\\Scripts;D:\\install\\Planner\\gtk2\\GTK2-Runtime\\bin;D:\\wamp\\bin\\php\\php7.4.11;D:\\install\\Xshell 7\\;D:\\soft\\sublimetext4\\Sublime Text\\ctags58;D:\\install\\微信web开发者工具\\;all\\no;ejs\\;all\\To;toiseGit\\bin;D:\\install\\Git\\cmd;D:\\install\\Git\\Git\\cmd;D:\\install\\nodejs\\node_global;D:\\install\\nodejs\\node_cache;D:\\install\\Go\\bin;D:\\wamp64\\bin\\php\\php7.4.33;C:\\ProgramData\\ComposerSetup\\bin;d:\\install\\wxkfzgj\\微信web开发者工具\\dll;D:\\install\\nodejs\\;d:\\install\\微信web开发者工具\\dll;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev Server at car.cso123.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'car.cso123.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/feehinew/frontend/web/admin/index.php'
+    'REMOTE_PORT' => '53877'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/index.php'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1696499249.0729
+    'REQUEST_TIME' => 1696499249
+    'argv' => []
+    'argc' => 0
+]2023-10-05 17:47:29 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+    in D:\wamp64\www\feehinew\backend\views\layouts\main.php:35
+    in D:\wamp64\www\feehinew\backend\controllers\SiteController.php:185
+2023-10-05 17:47:29 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+2023-10-05 17:47:29 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'site/main'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'k1vdde45n059g7rg4g6jiff1gs'
+    '_csrf' => '077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM\";}'
+    'BACKEND_FEEHICMS' => 'kb0me5telom8nmvqkt4e1s0i37'
+    '_csrf_backend' => '0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => 'http://car.cso123.com/admin/index.php'
+    '__captcha/site/captcha' => 'qith'
+    '__captcha/site/captchacount' => 1
+    '_create_referer' => 'http://car.cso123.com/admin/index.php?r=user-details%2Findex&userid=1&bdcar=1'
+    '_update_referer' => 'http://car.cso123.com/admin/index.php?ManagementSearch%5Bname%5D=&ManagementSearch%5Bavatar%5D=&ManagementSearch%5Bcartype_id%5D=&ManagementSearch%5Btype%5D=&ManagementSearch%5Bseat_num%5D=&ManagementSearch%5Bdoor_num%5D=&ManagementSearch%5Bgear_position%5D=&ManagementSearch%5Bstatus%5D=&ManagementSearch%5Brecommend%5D=&ManagementSearch%5Bcreated_at%5D=&r=management%2Findex'
+    '__backend__id' => 1
+    '__authKey' => 'zr9mY7lt23oAhj_ZYjydbLJKcbE3FJ19'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'car.cso123.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 SE 2.X MetaSr 1.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://car.cso123.com/admin/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=k1vdde45n059g7rg4g6jiff1gs; _csrf=077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM%22%3B%7D; BACKEND_FEEHICMS=kb0me5telom8nmvqkt4e1s0i37; _csrf_backend=0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5%22%3B%7D'
+    'PATH' => 'D:\\install\\VMware\\VMware Workstation\\bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\soft\\Sublime Text3\\;D:\\install\\Java\\jdk1.8.0_211\\bin;D:\\install\\Java\\jre;D:\\wamp\\bin\\php\\php7.3.5;C:\\WINDOWS\\System32\\OpenSSH\\;d:\\install\\Python37\\Scripts;D:\\install\\Planner\\gtk2\\GTK2-Runtime\\bin;D:\\wamp\\bin\\php\\php7.4.11;D:\\install\\Xshell 7\\;D:\\soft\\sublimetext4\\Sublime Text\\ctags58;D:\\install\\微信web开发者工具\\;all\\no;ejs\\;all\\To;toiseGit\\bin;D:\\install\\Git\\cmd;D:\\install\\Git\\Git\\cmd;D:\\install\\nodejs\\node_global;D:\\install\\nodejs\\node_cache;D:\\install\\Go\\bin;D:\\wamp64\\bin\\php\\php7.4.33;C:\\ProgramData\\ComposerSetup\\bin;d:\\install\\wxkfzgj\\微信web开发者工具\\dll;D:\\install\\nodejs\\;d:\\install\\微信web开发者工具\\dll;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev Server at car.cso123.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'car.cso123.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/feehinew/frontend/web/admin/index.php'
+    'REMOTE_PORT' => '53877'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fmain'
+    'REQUEST_URI' => '/admin/index.php?r=site%2Fmain'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1696499249.3978
+    'REQUEST_TIME' => 1696499249
+    'argv' => [
+        0 => 'r=site%2Fmain'
+    ]
+    'argc' => 1
+]2023-10-05 17:47:30 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+    in D:\wamp64\www\feehinew\backend\views\site\index.php:262
+    in D:\wamp64\www\feehinew\backend\controllers\SiteController.php:99
+2023-10-05 17:47:30 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+2023-10-05 17:47:30 [127.0.0.1][1][-][info][application] $_GET = [
+    '_' => '1696499250285'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'k1vdde45n059g7rg4g6jiff1gs'
+    '_csrf' => '077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM\";}'
+    'BACKEND_FEEHICMS' => 'kb0me5telom8nmvqkt4e1s0i37'
+    '_csrf_backend' => '0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => 'http://car.cso123.com/admin/index.php'
+    '__captcha/site/captcha' => 'qith'
+    '__captcha/site/captchacount' => 1
+    '_create_referer' => 'http://car.cso123.com/admin/index.php?r=user-details%2Findex&userid=1&bdcar=1'
+    '_update_referer' => 'http://car.cso123.com/admin/index.php?ManagementSearch%5Bname%5D=&ManagementSearch%5Bavatar%5D=&ManagementSearch%5Bcartype_id%5D=&ManagementSearch%5Btype%5D=&ManagementSearch%5Bseat_num%5D=&ManagementSearch%5Bdoor_num%5D=&ManagementSearch%5Bgear_position%5D=&ManagementSearch%5Bstatus%5D=&ManagementSearch%5Brecommend%5D=&ManagementSearch%5Bcreated_at%5D=&r=management%2Findex'
+    '__backend__id' => 1
+    '__authKey' => 'zr9mY7lt23oAhj_ZYjydbLJKcbE3FJ19'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'car.cso123.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'fhtpj0-mD58jhrpJ6JeOcMD5LaYwZIiaynh-E_VaqJAoXR_FH8VN-HfH6wyQ4NsGroN65UgB18qrCxx2rXfFpQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 SE 2.X MetaSr 1.0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://car.cso123.com/admin/index.php?r=site%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=k1vdde45n059g7rg4g6jiff1gs; _csrf=077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM%22%3B%7D; BACKEND_FEEHICMS=kb0me5telom8nmvqkt4e1s0i37; _csrf_backend=0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5%22%3B%7D'
+    'PATH' => 'D:\\install\\VMware\\VMware Workstation\\bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\soft\\Sublime Text3\\;D:\\install\\Java\\jdk1.8.0_211\\bin;D:\\install\\Java\\jre;D:\\wamp\\bin\\php\\php7.3.5;C:\\WINDOWS\\System32\\OpenSSH\\;d:\\install\\Python37\\Scripts;D:\\install\\Planner\\gtk2\\GTK2-Runtime\\bin;D:\\wamp\\bin\\php\\php7.4.11;D:\\install\\Xshell 7\\;D:\\soft\\sublimetext4\\Sublime Text\\ctags58;D:\\install\\微信web开发者工具\\;all\\no;ejs\\;all\\To;toiseGit\\bin;D:\\install\\Git\\cmd;D:\\install\\Git\\Git\\cmd;D:\\install\\nodejs\\node_global;D:\\install\\nodejs\\node_cache;D:\\install\\Go\\bin;D:\\wamp64\\bin\\php\\php7.4.33;C:\\ProgramData\\ComposerSetup\\bin;d:\\install\\wxkfzgj\\微信web开发者工具\\dll;D:\\install\\nodejs\\;d:\\install\\微信web开发者工具\\dll;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev Server at car.cso123.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'car.cso123.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/feehinew/frontend/web/admin/index.php'
+    'REMOTE_PORT' => '53877'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '_=1696499250285'
+    'REQUEST_URI' => '/admin/index.php?_=1696499250285'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1696499250.6345
+    'REQUEST_TIME' => 1696499250
+    'argv' => [
+        0 => '_=1696499250285'
+    ]
+    'argc' => 1
+]2023-10-05 17:47:32 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+    in D:\wamp64\www\feehinew\backend\views\layouts\main.php:35
+    in D:\wamp64\www\feehinew\backend\actions\IndexAction.php:76
+2023-10-05 17:47:32 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+2023-10-05 17:47:32 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'cartype/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'k1vdde45n059g7rg4g6jiff1gs'
+    '_csrf' => '077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM\";}'
+    'BACKEND_FEEHICMS' => 'kb0me5telom8nmvqkt4e1s0i37'
+    '_csrf_backend' => '0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => 'http://car.cso123.com/admin/index.php'
+    '__captcha/site/captcha' => 'qith'
+    '__captcha/site/captchacount' => 1
+    '_create_referer' => 'http://car.cso123.com/admin/index.php?r=user-details%2Findex&userid=1&bdcar=1'
+    '_update_referer' => 'http://car.cso123.com/admin/index.php?ManagementSearch%5Bname%5D=&ManagementSearch%5Bavatar%5D=&ManagementSearch%5Bcartype_id%5D=&ManagementSearch%5Btype%5D=&ManagementSearch%5Bseat_num%5D=&ManagementSearch%5Bdoor_num%5D=&ManagementSearch%5Bgear_position%5D=&ManagementSearch%5Bstatus%5D=&ManagementSearch%5Brecommend%5D=&ManagementSearch%5Bcreated_at%5D=&r=management%2Findex'
+    '__backend__id' => 1
+    '__authKey' => 'zr9mY7lt23oAhj_ZYjydbLJKcbE3FJ19'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'car.cso123.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 SE 2.X MetaSr 1.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://car.cso123.com/admin/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=k1vdde45n059g7rg4g6jiff1gs; _csrf=077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM%22%3B%7D; BACKEND_FEEHICMS=kb0me5telom8nmvqkt4e1s0i37; _csrf_backend=0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5%22%3B%7D'
+    'PATH' => 'D:\\install\\VMware\\VMware Workstation\\bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\soft\\Sublime Text3\\;D:\\install\\Java\\jdk1.8.0_211\\bin;D:\\install\\Java\\jre;D:\\wamp\\bin\\php\\php7.3.5;C:\\WINDOWS\\System32\\OpenSSH\\;d:\\install\\Python37\\Scripts;D:\\install\\Planner\\gtk2\\GTK2-Runtime\\bin;D:\\wamp\\bin\\php\\php7.4.11;D:\\install\\Xshell 7\\;D:\\soft\\sublimetext4\\Sublime Text\\ctags58;D:\\install\\微信web开发者工具\\;all\\no;ejs\\;all\\To;toiseGit\\bin;D:\\install\\Git\\cmd;D:\\install\\Git\\Git\\cmd;D:\\install\\nodejs\\node_global;D:\\install\\nodejs\\node_cache;D:\\install\\Go\\bin;D:\\wamp64\\bin\\php\\php7.4.33;C:\\ProgramData\\ComposerSetup\\bin;d:\\install\\wxkfzgj\\微信web开发者工具\\dll;D:\\install\\nodejs\\;d:\\install\\微信web开发者工具\\dll;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev Server at car.cso123.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'car.cso123.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/feehinew/frontend/web/admin/index.php'
+    'REMOTE_PORT' => '53877'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cartype%2Findex'
+    'REQUEST_URI' => '/admin/index.php?r=cartype%2Findex'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1696499252.4665
+    'REQUEST_TIME' => 1696499252
+    'argv' => [
+        0 => 'r=cartype%2Findex'
+    ]
+    'argc' => 1
+]2023-10-05 17:47:33 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+    in D:\wamp64\www\feehinew\backend\views\layouts\main.php:35
+    in D:\wamp64\www\feehinew\backend\actions\IndexAction.php:76
+2023-10-05 17:47:33 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+2023-10-05 17:47:33 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'k1vdde45n059g7rg4g6jiff1gs'
+    '_csrf' => '077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM\";}'
+    'BACKEND_FEEHICMS' => 'kb0me5telom8nmvqkt4e1s0i37'
+    '_csrf_backend' => '0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => 'http://car.cso123.com/admin/index.php'
+    '__captcha/site/captcha' => 'qith'
+    '__captcha/site/captchacount' => 1
+    '_create_referer' => 'http://car.cso123.com/admin/index.php?r=user-details%2Findex&userid=1&bdcar=1'
+    '_update_referer' => 'http://car.cso123.com/admin/index.php?ManagementSearch%5Bname%5D=&ManagementSearch%5Bavatar%5D=&ManagementSearch%5Bcartype_id%5D=&ManagementSearch%5Btype%5D=&ManagementSearch%5Bseat_num%5D=&ManagementSearch%5Bdoor_num%5D=&ManagementSearch%5Bgear_position%5D=&ManagementSearch%5Bstatus%5D=&ManagementSearch%5Brecommend%5D=&ManagementSearch%5Bcreated_at%5D=&r=management%2Findex'
+    '__backend__id' => 1
+    '__authKey' => 'zr9mY7lt23oAhj_ZYjydbLJKcbE3FJ19'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'car.cso123.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 SE 2.X MetaSr 1.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://car.cso123.com/admin/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=k1vdde45n059g7rg4g6jiff1gs; _csrf=077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM%22%3B%7D; BACKEND_FEEHICMS=kb0me5telom8nmvqkt4e1s0i37; _csrf_backend=0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5%22%3B%7D'
+    'PATH' => 'D:\\install\\VMware\\VMware Workstation\\bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\soft\\Sublime Text3\\;D:\\install\\Java\\jdk1.8.0_211\\bin;D:\\install\\Java\\jre;D:\\wamp\\bin\\php\\php7.3.5;C:\\WINDOWS\\System32\\OpenSSH\\;d:\\install\\Python37\\Scripts;D:\\install\\Planner\\gtk2\\GTK2-Runtime\\bin;D:\\wamp\\bin\\php\\php7.4.11;D:\\install\\Xshell 7\\;D:\\soft\\sublimetext4\\Sublime Text\\ctags58;D:\\install\\微信web开发者工具\\;all\\no;ejs\\;all\\To;toiseGit\\bin;D:\\install\\Git\\cmd;D:\\install\\Git\\Git\\cmd;D:\\install\\nodejs\\node_global;D:\\install\\nodejs\\node_cache;D:\\install\\Go\\bin;D:\\wamp64\\bin\\php\\php7.4.33;C:\\ProgramData\\ComposerSetup\\bin;d:\\install\\wxkfzgj\\微信web开发者工具\\dll;D:\\install\\nodejs\\;d:\\install\\微信web开发者工具\\dll;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev Server at car.cso123.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'car.cso123.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/feehinew/frontend/web/admin/index.php'
+    'REMOTE_PORT' => '53107'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/admin/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1696499253.8686
+    'REQUEST_TIME' => 1696499253
+    'argv' => [
+        0 => 'r=user%2Findex'
+    ]
+    'argc' => 1
+]2023-10-05 17:47:34 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+    in D:\wamp64\www\feehinew\backend\views\layouts\main.php:35
+    in D:\wamp64\www\feehinew\backend\actions\IndexAction.php:76
+2023-10-05 17:47:34 [127.0.0.1][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 127.0.0.1
+2023-10-05 17:47:34 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'management/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'k1vdde45n059g7rg4g6jiff1gs'
+    '_csrf' => '077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM\";}'
+    'BACKEND_FEEHICMS' => 'kb0me5telom8nmvqkt4e1s0i37'
+    '_csrf_backend' => '0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => 'http://car.cso123.com/admin/index.php'
+    '__captcha/site/captcha' => 'qith'
+    '__captcha/site/captchacount' => 1
+    '_create_referer' => 'http://car.cso123.com/admin/index.php?r=user-details%2Findex&userid=1&bdcar=1'
+    '_update_referer' => 'http://car.cso123.com/admin/index.php?ManagementSearch%5Bname%5D=&ManagementSearch%5Bavatar%5D=&ManagementSearch%5Bcartype_id%5D=&ManagementSearch%5Btype%5D=&ManagementSearch%5Bseat_num%5D=&ManagementSearch%5Bdoor_num%5D=&ManagementSearch%5Bgear_position%5D=&ManagementSearch%5Bstatus%5D=&ManagementSearch%5Brecommend%5D=&ManagementSearch%5Bcreated_at%5D=&r=management%2Findex'
+    '__backend__id' => 1
+    '__authKey' => 'zr9mY7lt23oAhj_ZYjydbLJKcbE3FJ19'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'car.cso123.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 SE 2.X MetaSr 1.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://car.cso123.com/admin/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=k1vdde45n059g7rg4g6jiff1gs; _csrf=077a1ce7668a8fe5e2ee94eab449881a2e6873264fcf949b195392a93e66954da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XMh3QU4RSwE44r3i3bJJbSR1gofxGDcM%22%3B%7D; BACKEND_FEEHICMS=kb0me5telom8nmvqkt4e1s0i37; _csrf_backend=0cd9328c9982b05c34e27f55bd70992f10529d6b4822a67ddd1a6e31a4984f07a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22VFvJPcBgTAQExwUvnzWCxe_PasbeX-m5%22%3B%7D'
+    'PATH' => 'D:\\install\\VMware\\VMware Workstation\\bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\soft\\Sublime Text3\\;D:\\install\\Java\\jdk1.8.0_211\\bin;D:\\install\\Java\\jre;D:\\wamp\\bin\\php\\php7.3.5;C:\\WINDOWS\\System32\\OpenSSH\\;d:\\install\\Python37\\Scripts;D:\\install\\Planner\\gtk2\\GTK2-Runtime\\bin;D:\\wamp\\bin\\php\\php7.4.11;D:\\install\\Xshell 7\\;D:\\soft\\sublimetext4\\Sublime Text\\ctags58;D:\\install\\微信web开发者工具\\;all\\no;ejs\\;all\\To;toiseGit\\bin;D:\\install\\Git\\cmd;D:\\install\\Git\\Git\\cmd;D:\\install\\nodejs\\node_global;D:\\install\\nodejs\\node_cache;D:\\install\\Go\\bin;D:\\wamp64\\bin\\php\\php7.4.33;C:\\ProgramData\\ComposerSetup\\bin;d:\\install\\wxkfzgj\\微信web开发者工具\\dll;D:\\install\\nodejs\\;d:\\install\\微信web开发者工具\\dll;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev Server at car.cso123.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'car.cso123.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/feehinew/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/feehinew/frontend/web/admin/index.php'
+    'REMOTE_PORT' => '53107'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=management%2Findex'
+    'REQUEST_URI' => '/admin/index.php?r=management%2Findex'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1696499254.6184
+    'REQUEST_TIME' => 1696499254
+    'argv' => [
+        0 => 'r=management%2Findex'
+    ]
+    'argc' => 1
+]

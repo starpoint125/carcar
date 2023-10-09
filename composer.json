@@ -1,0 +1,89 @@
+{
+    "name": "feehi/cms",
+    "description": "Feehi CMS Project Template",
+    "keywords": [
+        "feehicms",
+        "yii2 cms",
+        "cms",
+        "php framework",
+        "yii2 advanced",
+        "project template",
+        "feehi",
+        "php",
+        "php cms"
+    ],
+    "homepage": "http://cms.feehi.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/liufee/cms/issues?state=open",
+        "forum": "http://cms.feehi.com/",
+        "wiki": "http://cms.feehi.com/help",
+        "source": "https://github.com/feehi/cms"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php"                               : ">=5.4.0",
+        "ext-json"                          : "*",
+        "yiisoft/yii2"                      : ">=2.0.49",
+        "yiisoft/yii2-bootstrap"            : "*",
+        "yiisoft/yii2-swiftmailer"          : "*",
+        "feehi/yii2-cdn"                    : "*",
+        "yiisoft/yii2-imagine"              : "^2.1",
+        "phpoffice/phpspreadsheet"          : "*",
+        "illusion/yii2-excel"               : "^1.2",
+        "phpoffice/phpexcel"                : "^1.8.2",
+        "linslin/yii2-curl"                 : "*",
+        "jpush/jpush"                       : "*",
+        "lspbupt/yii2-jpush"                : "*",
+        "spiral/goridge"                    : "^2.4",
+        "nmred/kafka-php"                   : "v0.2.0.8",
+
+        "yiisoft/yii2-elasticsearch"        : "~2.1.4",
+        "yiiplus/yii2-websocket"            : "^1.0.0",
+        "aliyuncs/oss-sdk-php": "~2.0.7"
+
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug"                 : "~2.0.14",
+        "yiisoft/yii2-gii"                   : "~2.0.8",
+        "yiisoft/yii2-faker"                 : "~2.0.5",
+        "codeception/base"                   : "^2.5.6",
+        "codeception/verify"                 : "~0.3.3",
+        "guzzlehttp/guzzle"                  : ">=4.1.4 <7.0",
+        "kartik-v/yii2-widget-datetimepicker": "*",
+        "kartik-v/yii2-widget-select2"       : "*",
+        "kartik-v/yii2-widget-fileinput"     : "@dev",
+        "kartik-v/yii2-date-range"           : "*",
+        "yiisoft/yii2-redis"                 : "~2.0.18",
+        "phpoffice/phpspreadsheet"           : "*",
+        "jiguang/jsms"                       : "~1.0.9",
+        "jpush/jpush"                        : "*",
+        "yiiplus/yii2-websocket"            : "^1.0.2",
+        "aliyuncs/oss-sdk-php": "~2.0.7"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "secure-http": false,
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    },
+    "scripts": {
+        "download-upload-files": [
+            "@php yii feehi/download-upload-files"
+        ]
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}

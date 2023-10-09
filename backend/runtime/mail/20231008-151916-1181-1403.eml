@@ -1,0 +1,157 @@
+Message-ID: <662a1e7b9acaea8f4327a893bcd3249e@car.cso123.com>
+Date: Sun, 08 Oct 2023 15:19:16 +0800
+Subject: =?UTF-8?Q?=E6=9D=A5=E8=87=AA?= Feehi CMS
+ =?UTF-8?Q?=E5=90=8E=E5=8F=B0=E7=9A=84=E6=96=B0?=
+ =?UTF-8?Q?=E6=97=A5=E5=BF=97=E6=B6=88=E6=81=AF?=
+From: Feehi CMS robot  <admin@feehi.com>
+To: admin@feehi.com, liufee@126.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+2023-10-08 15:19:16
+[127.0.0.1][1][lvah0ffmi4i3ns4f3dt9h6ufrq][error][yii\base\UnknownPropert=
+yException]
+yii\base\UnknownPropertyException: Setting unknown property:
+backend\actions\CreateAction::create in
+D:\wamp64\www\feehinew\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 D:\wamp64\www\feehinew\vendor\yiisoft\yii2\BaseYii.php(558):
+yii\base\Component->__set('create', Object(Closure))
+#1
+D:\wamp64\www\feehinew\vendor\yiisoft\yii2\base\BaseObject.php(107):
+yii\BaseYii::configure(Object(backend\actions\CreateAction), Array)
+#2 D:\wamp64\www\feehinew\vendor\yiisoft\yii2\base\Action.php(61):
+yii\base\BaseObject->__construct(Array)
+#3 [internal function]: yii\base\Action->__construct('create',
+Object(backend\controllers\OrderController), Array)
+#4 D:\wamp64\www\feehinew\vendor\yiisoft\yii2\di\Container.php(419):
+ReflectionClass->newInstanceArgs(Array)
+#5 D:\wamp64\www\feehinew\vendor\yiisoft\yii2\di\Container.php(170):
+yii\di\Container->build('backend\\actions...', Array, Array)
+#6 D:\wamp64\www\feehinew\vendor\yiisoft\yii2\BaseYii.php(365):
+yii\di\Container->get('backend\\actions...', Array, Array)
+#7
+D:\wamp64\www\feehinew\vendor\yiisoft\yii2\base\Controller.php(248):
+yii\BaseYii::createObject(Array, Array)
+#8
+D:\wamp64\www\feehinew\vendor\yiisoft\yii2\base\Controller.php(147):
+yii\base\Controller->createAction('create')
+#9 D:\wamp64\www\feehinew\vendor\yiisoft\yii2\base\Module.php(552):
+yii\base\Controller->runAction('create', Array)
+#10
+D:\wamp64\www\feehinew\vendor\yiisoft\yii2\web\Application.php(103):
+yii\base\Module->runAction('order/create', Array)
+#11
+D:\wamp64\www\feehinew\vendor\yiisoft\yii2\base\Application.php(384):
+yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\wamp64\www\feehinew\frontend\web\admin\index.php(18):
+yii\base\Application->run()
+#13 {main}
+2023-10-08 15:19:16
+[127.0.0.1][1][lvah0ffmi4i3ns4f3dt9h6ufrq][info][application] $_GET =3D
+[
+    'r' =3D> 'order/create'
+]
+
+$_POST =3D []
+
+$_FILES =3D []
+
+$_COOKIE =3D [
+    'BACKEND_FEEHICMS' =3D> 'lvah0ffmi4i3ns4f3dt9h6ufrq'
+    '_csrf_backend' =3D>
+'3ef6ef57f2ff0ff80d935cf8f4b5257f43d8d0bab463f9ebc40ca0288351dbd5a:2:{i:0;s=
+:13:\"_csrf_backend\";i:1;s:32:\"bMXY-F_ZkVlBZ8UwziBpq9uuwSxgvLjf\";}'
+    'PHPSESSID' =3D> 'mvm5ti0k4rf4gbj674acn9e1k2'
+    '_csrf' =3D>
+'87b2afe59648bad7c3c0d529129b92de7ce6dbb7c6bbd2f14c9e553bdd28a8f5a:2:{i:0;=
+s:5:\"_csrf\";i:1;s:32:\"cmLkHpIxHdsTJ46_Q_swDs4FBQhEwGug\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =3D> []
+    '_backend_returnUrl' =3D> 'http://car.cso123.com/admin/'
+    '__captcha/site/captcha' =3D> 'luxu'
+    '__captcha/site/captchacount' =3D> 1
+    '__backend__id' =3D> 1
+    '__authKey' =3D> 'zr9mY7lt23oAhj_ZYjydbLJKcbE3FJ19'
+]
+
+$_SERVER =3D [
+    'HTTP_HOST' =3D> 'car.cso123.com'
+    'HTTP_CONNECTION' =3D> 'keep-alive'
+    'HTTP_CACHE_CONTROL' =3D> 'max-age=3D0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+xml,application/xml;q=3D0.9,image/avif,image/w=
+ebp,image/apng,*/*;q=3D0.8,application/signed-exchange;v=3Db3;q=3D0.7'
+    'HTTP_REFERER' =3D>
+'http://car.cso123.com/admin/index.php?r=3Dorder/index'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' =3D> 'zh-CN,zh;q=3D0.9'
+    'HTTP_COOKIE' =3D> 'BACKEND_FEEHICMS=3Dlvah0ffmi4i3ns4f3dt9h6ufrq;
+_csrf_backend=3D3ef6ef57f2ff0ff80d935cf8f4b5257f43d8d0bab463f9ebc40ca0288=
+351dbd5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%=
+3A%22bMXY-F_ZkVlBZ8UwziBpq9uuwSxgvLjf%22%3B%7D;
+PHPSESSID=3Dmvm5ti0k4rf4gbj674acn9e1k2;
+_csrf=3D87b2afe59648bad7c3c0d529129b92de7ce6dbb7c6bbd2f14c9e553bdd28a8f5a=
+%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cmLkHpIxHdsT=
+J46_Q_swDs4FBQhEwGug%22%3B%7D'
+    'PATH' =3D> 'D:\\install\\VMware\\VMware
+Workstation\\bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32=
+\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\Sys=
+tem32\\OpenSSH\\;D:\\soft\\Sublime
+Text3\\;D:\\install\\Java\\jdk1.8.0_211\\bin;D:\\install\\Java\\jre;D:\\w=
+amp\\bin\\php\\php7.3.5;C:\\WINDOWS\\System32\\OpenSSH\\;d:\\install\\Py=
+thon37\\Scripts;D:\\install\\Planner\\gtk2\\GTK2-Runtime\\bin;D:\\wamp\\=
+bin\\php\\php7.4.11;D:\\install\\Xshell
+7\\;D:\\soft\\sublimetext4\\Sublime
+Text\\ctags58;D:\\install\\=E5=BE=AE=E4=BF=A1web=E5=BC=80=
+=E5=8F=91=E8=80=85=E5=B7=A5=E5=85=B7\\;all\\no;ejs\\;all\\To;toiseGit\\b=
+in;D:\\install\\Git\\cmd;D:\\install\\Git\\Git\\cmd;D:\\install\\nodejs\=
+\node_global;D:\\install\\nodejs\\node_cache;D:\\install\\Go\\bin;D:\\wa=
+mp64\\bin\\php\\php7.4.33;C:\\ProgramData\\ComposerSetup\\bin;d:\\instal=
+l\\wxkfzgj\\=E5=BE=AE=E4=BF=A1web=E5=BC=80=E5=8F=91=E8=80=85=
+=E5=B7=A5=E5=85=B7\\dll;D:\\install\\nodejs\\;d:\\install\\=E5=BE=AE=
+=E4=BF=A1web=E5=BC=80=E5=8F=91=E8=80=85=E5=B7=A5=E5=85=B7\\dll;C:\\WINDO=
+WS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsA=
+pps'
+    'SystemRoot' =3D> 'C:\\WINDOWS'
+    'COMSPEC' =3D> 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' =3D> '<address>Apache/2.4.54 (Win64) PHP/7.4.33
+mod_fcgid/2.3.10-dev Server at car.cso123.com Port 80</address>
+'
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4.54 (Win64) PHP/7.4.33
+mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' =3D> 'car.cso123.com'
+    'SERVER_ADDR' =3D> '127.0.0.1'
+    'SERVER_PORT' =3D> '80'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'DOCUMENT_ROOT' =3D> 'D:/wamp64/www/feehinew/frontend/web'
+    'REQUEST_SCHEME' =3D> 'http'
+    'CONTEXT_PREFIX' =3D> ''
+    'CONTEXT_DOCUMENT_ROOT' =3D> 'D:/wamp64/www/feehinew/frontend/web'
+    'SERVER_ADMIN' =3D> 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' =3D>
+'D:/wamp64/www/feehinew/frontend/web/admin/index.php'
+    'REMOTE_PORT' =3D> '60669'
+    'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'REQUEST_METHOD' =3D> 'GET'
+    'QUERY_STRING' =3D> 'r=3Dorder%2Fcreate'
+    'REQUEST_URI' =3D> '/admin/index.php?r=3Dorder%2Fcreate'
+    'SCRIPT_NAME' =3D> '/admin/index.php'
+    'PHP_SELF' =3D> '/admin/index.php'
+    'REQUEST_TIME_FLOAT' =3D> 1696749555.992
+    'REQUEST_TIME' =3D> 1696749555
+    'argv' =3D> [
+        0 =3D> 'r=3Dorder%2Fcreate'
+    ]
+    'argc' =3D> 1
+]
