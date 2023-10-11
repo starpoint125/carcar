@@ -39,7 +39,11 @@ class RegistUsers extends \yii\db\ActiveRecord
             [['remark'], 'string'],
             [['created_at','updated_at'], 'integer'],
             [['name', 'address'], 'string', 'max' => 255],
+            [['name'], 'string', 'max' => 15],
             [['phone'], 'string', 'max' => 11],
+            [['phone'], 'match', 'pattern' => '/^[0-9]{11}$/',
+            'message' => '手机号必须是11位数字。'],
+            [['phone'], 'unique',  'message' => '该手机号已被注册。'],
         ];
     }
 
