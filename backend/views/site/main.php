@@ -1,10 +1,4 @@
 <?php
-/**
- * Author: lf
- * Blog: https://blog.feehi.com
- * Email: job@feehi.com
- * Created at: 2016-03-31 14:17
- */
 
 use common\widgets\JsBlock;
 use yii\helpers\Url;
@@ -21,7 +15,7 @@ $this->registerCss("
 ")
 ?>
 <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-3" >
         <div class="ibox float-e-margins">
             <div class="ibox-title">
                 <span class="label label-success pull-right"><?= Yii::t('app', 'Month') ?></span>
@@ -34,7 +28,7 @@ $this->registerCss("
             </div>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3" style='display:none;'>
         <div class="ibox float-e-margins">
             <div class="ibox-title">
                 <span class="label label-info pull-right"><?= Yii::t('app', 'Today') ?></span>
@@ -43,6 +37,19 @@ $this->registerCss("
             <div class="ibox-content openContab" href="<?=Url::to(['comment/index'])?>" title="<?= Yii::t('app', 'Comments')?>" style="cursor: pointer">
                 <h1 class="no-margins"><?= $statics['COMMENT'][0] ?></h1>
                 <div class="stat-percent font-bold text-info"><?= $statics['COMMENT'][1] ?>% <i class="fa fa-level-up"></i></div>
+                <small><?= Yii::t('app', 'Total') ?></small>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <span class="label label-info pull-right"><?= Yii::t('app', 'Today') ?></span>
+                <h5><?= Yii::t('app', '车辆') ?></h5>
+            </div>
+            <div class="ibox-content openContab" href="<?=Url::to(['management/index'])?>" title="<?= Yii::t('app', '车辆')?>" style="cursor: pointer">
+                <h1 class="no-margins"><?= $statics['CARNUM'][0] ?></h1>
+                <div class="stat-percent font-bold text-info"><?= $statics['CARNUM'][1] ?>% <i class="fa fa-level-up"></i></div>
                 <small><?= Yii::t('app', 'Total') ?></small>
             </div>
         </div>
@@ -60,7 +67,7 @@ $this->registerCss("
             </div>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3" >
         <div class="ibox float-e-margins">
             <div class="ibox-title">
                 <span class="label label-success pull-right"><?= Yii::t('app', 'Month') ?></span>

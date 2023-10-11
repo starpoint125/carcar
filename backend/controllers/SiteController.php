@@ -13,6 +13,7 @@ use Exception;
 use common\services\ArticleServiceInterface;
 use common\services\UserServiceInterface;
 use common\services\CommentServiceInterface;
+use common\services\ManagementServiceInterface;
 use common\services\FriendlyLinkServiceInterface;
 use common\services\MenuService;
 use backend\models\form\LoginForm;
@@ -112,6 +113,7 @@ class SiteController extends \yii\web\Controller
         $articleService = Yii::$app->get(ArticleServiceInterface::ServiceName);
         /** @var CommentServiceInterface $commentService */
         $commentService = Yii::$app->get(CommentServiceInterface::ServiceName);
+        $carService = Yii::$app->get(ManagementServiceInterface::ServiceName);
         /** @var UserServiceInterface $userService */
         $userService = Yii::$app->get(UserServiceInterface::ServiceName);
         /** @var FriendlyLinkServiceInterface $friendlyLinkService */
@@ -153,6 +155,7 @@ class SiteController extends \yii\web\Controller
         $temp = [
             'ARTICLE' => $articleService->getArticlesCountByPeriod(),
             'COMMENT' => $commentService->getCommentCountByPeriod(),
+            'CARNUM' => $carService->getCarCountByPeriod(),
             'USER' => $userService->getUserCountByPeriod(),
             'FRIENDLY_LINK' => $friendlyLinkService->getFriendlyLinkCountByPeriod(),
         ];
@@ -165,6 +168,10 @@ class SiteController extends \yii\web\Controller
             'COMMENT' => [
                 $temp['COMMENT'],
                 $temp['COMMENT'] ? sprintf("%01.2f",($commentService->getCommentCountByPeriod(strtotime(date('Y-m-01 00:00:00')), strtotime(date('Y-m-01 23:59:59'))) / $temp['COMMENT']) * 100) : $percent
+            ],
+            'CARNUM' => [
+                $temp['CARNUM'],
+                $temp['CARNUM'] ? sprintf("%01.2f",($carService->getCarCountByPeriod(strtotime(date('Y-m-01 00:00:00')), strtotime(date('Y-m-01 23:59:59'))) / $temp['CARNUM']) * 100) : $percent
             ],
             'USER' => [
                 $temp['USER'],
