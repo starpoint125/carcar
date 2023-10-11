@@ -87,7 +87,14 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Admin Users');
                             'class' => ActionColumn::className(),
                             'buttons' => ['assignment' => $assignment],
                         ],
-                    ]
+                    ],
+                    'beforeRow' => function ($model) {
+                        // 在每行数据之前执行的匿名函数
+                        if ($model->id == 1) {
+                            return false; // 返回 false 来防止渲染这一行
+                        }
+                        return true; // 返回 true 以渲染这一行
+                    },
                 ]); ?>
             </div>
         </div>
