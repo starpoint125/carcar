@@ -378,4 +378,5 @@ return [
     'Cartype' =>'车辆类别管理',
     'Management' =>'车辆管理',
     'User Details' =>'消费明细',
+    'Regist Users' =>'报名人员列表',
 ];
