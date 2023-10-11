@@ -48,13 +48,16 @@ $this->params['breadcrumbs'][] = $this->title;
             }
         </style>
     </head>
-    <body class="gray-bg">
+    <style type="text/css">
+        #loginFrame{background:url(/static/images/login_bg.png) #4771a0 no-repeat center center fixed;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover}
+    </style>
+    <body class="gray-bg" id="loginFrame">
     <?php $this->beginBody() ?>
     <div class="middle-box text-center loginscreen  animated fadeInDown">
         <?= $this->render('/widgets/_flash') ?>
         <div>
             <div>
-                <h1 class="logo-name">H+</h1>
+                <h1 class="logo-name">ERP</h1>
             </div>
             <h3><?= Yii::t('app', 'Welcome to') ?>云信链</h3>
             <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
