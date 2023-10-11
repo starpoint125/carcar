@@ -37,7 +37,7 @@ class RegistUsers extends \yii\db\ActiveRecord
         return [
             [['name', 'phone', 'address'], 'required'],
             [['remark'], 'string'],
-            [['created_at','updated_at'], 'integer'],
+            [['created_at','updated_at','status'], 'integer'],
             [['name', 'address'], 'string', 'max' => 255],
             [['name'], 'string', 'max' => 15],
             [['phone'], 'string', 'max' => 11],
@@ -58,7 +58,8 @@ class RegistUsers extends \yii\db\ActiveRecord
             'phone' => '手机号',
             'address' => '地址',
             'remark' => '备注',
-            'created_at' => 'Created At',
+            'status' => '状态',
+            'created_at' => '创建时间',
         ];
     }
 }

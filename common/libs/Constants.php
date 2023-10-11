@@ -272,4 +272,17 @@ class Constants
         return self::getItems($items, $key);
     }
 
+     /**
+     * 报名人员状态
+     */
+    public static function getBmemberItems($key = null)
+    {
+        $items = [
+            0 => '正常',
+            1 => '有意向',
+            2 => '无意向',
+        ];
+        return self::getItems($items, $key);
+    }
+
 }

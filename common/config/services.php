@@ -54,4 +54,7 @@ return [
     \common\services\OrderServiceInterface::ServiceName=>[
         'class' => \common\services\OrderService::className(),
     ],
+    \common\services\RegistUsersServiceInterface::ServiceName=>[
+        'class' => \common\services\RegistUsersService::className(),
+    ],
 ];
