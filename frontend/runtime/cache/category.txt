@@ -1,1 +1,0 @@
-{"\/one\/<cat:one>":"article\/index","\/two\/<cat:two>":"article\/index","\/three\/<cat:three>":"article\/index"}
