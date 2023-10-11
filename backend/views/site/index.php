@@ -60,8 +60,8 @@ $this->title = Yii::t('app', 'Backend Manage System');
                         </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             <li><a class="J_menuItem" href="<?= Url::to(['admin-user/self-update']) ?>"><?= Yii::t('app', 'Profile') ?></a></li>
-                            <li><a class="J_menuItem" href="<?= Url::to(['article/index']) ?>"><?= Yii::t('app', 'Articles') ?></a></li>
-                            <li><a target="_blank" href="<?= Yii::$app->params['site']['url'] ?>"><?= Yii::t('app', 'Frontend') ?></a></li>
+                            <li style='display:none;'><a class="J_menuItem" href="<?= Url::to(['article/index']) ?>"><?= Yii::t('app', 'Articles') ?></a></li>
+                            <li style='display:none;'><a target="_blank" href="<?= Yii::$app->params['site']['url'] ?>"><?= Yii::t('app', 'Frontend') ?></a></li>
                             <li class="divider"></li>
                             <li><a data-method="post" href="<?= Url::toRoute('site/logout') ?>"><?= Yii::t('app', 'Logout') ?></a></li>
                         </ul>
