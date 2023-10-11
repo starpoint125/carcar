@@ -18,8 +18,8 @@ class RegistUsersSearch extends RegistUsers implements \backend\models\search\Se
     public function rules()
     {
         return [
-            [['id', 'created_at', 'updated_at','status'], 'integer'],
-            [['name', 'phone', 'address', 'remark'], 'safe'],
+            [['id', 'status'], 'integer'],
+            [['name', 'phone', 'address', 'created_at','remark'], 'safe'],
         ];
     }
 
@@ -53,7 +53,7 @@ class RegistUsersSearch extends RegistUsers implements \backend\models\search\Se
                 ]
             ],
         ]);
-
+        
         $this->load($params);
 
         if (!$this->validate()) {
@@ -61,20 +61,24 @@ class RegistUsersSearch extends RegistUsers implements \backend\models\search\Se
             // $query->where('0=1');
             return $dataProvider;
         }
-
+        if (!empty($params['RegistUsersSearch']['created_at'])) {
+            $time = explode('~',$params['RegistUsersSearch']['created_at']);
+            $begin = trim($time[0]);
+            $end = trim($time[1]);
+            $query->andFilterWhere(['>=', 'created_at', strtotime($begin)])
+                ->andFilterWhere(['<=', 'created_at', strtotime($end)]);
+        }
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
             'status' => $this->status,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'phone', $this->phone])
             ->andFilterWhere(['like', 'address', $this->address])
             ->andFilterWhere(['like', 'remark', $this->remark]);
-
+        // echo $query->createCommand()->getRawSql();exit;
         return $dataProvider;
     }
 }
