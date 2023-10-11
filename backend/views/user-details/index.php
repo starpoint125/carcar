@@ -1,5 +1,4 @@
 <?php
-
 use backend\widgets\Bar;
 use backend\grid\CheckboxColumn;
 use backend\grid\ActionColumn;
@@ -19,6 +18,8 @@ use backend\models\form\Management;
 
 $this->title = 'User Details';
 $this->params['breadcrumbs'][] = yii::t('app', 'User Details');
+
+$userId = Yii::$app->user->identity->id;
 ?>
 <div class="row">
     <div class="col-sm-12">
@@ -26,17 +27,23 @@ $this->params['breadcrumbs'][] = yii::t('app', 'User Details');
             <?= $this->render('/widgets/_ibox-title') ?>
             <div class="ibox-content">
                 <div class="mail-tools tooltip-demo m-t-md"> 
-
-                    <a class="btn btn-white btn-sm multi-back" href="<?=Yii::$app->urlManager->createUrl(['user/index'])?>" title="返回">
-                        <i class="fa fa-back"></i> 返回
-                    </a>
+                    <?php 
+                        if (!in_array($userId,Constants::SUPERID)) {
+                    ?>
+                        <a class="btn btn-white btn-sm multi-back" href="<?=Yii::$app->urlManager->createUrl(['user/index'])?>" title="返回">
+                            <i class="fa fa-back"></i> 返回
+                        </a>
+                    <?php
+                        }
+                    ?>
+                    
                     <a class="btn btn-white btn-sm refresh" href="<?=Yii::$app->urlManager->createUrl(['user-details/refresh'])?>" title="刷新" data-pjax="0">
                         <i class="fa fa-refresh"></i> 刷新
                     </a> 
                     <a class="btn btn-white btn-sm" href="<?=Yii::$app->urlManager->createUrl(['user-details/create','userid'=>Yii::$app->request->get('userid'),'bdcar'=>Yii::$app->request->get('bdcar')])?>" title="创建" data-pjax="0">
                         <i class="fa fa-plus"></i> 创建
                     </a> 
-                    <a style="display: none;" class="btn btn-white btn-sm multi-operate" href="<?=Yii::$app->urlManager->createUrl(['user-details/delete'])?>" title="删除" data-pjax="0" data-confirm="真的要删除吗？">
+                    <a style="display: ;" class="btn btn-white btn-sm multi-operate" href="<?=Yii::$app->urlManager->createUrl(['user-details/delete'])?>" title="删除" data-pjax="0" data-confirm="真的要删除吗？">
                         <i class="fa fa-trash-o"></i> 删除
                     </a>
                 </div>
@@ -47,10 +54,7 @@ $this->params['breadcrumbs'][] = yii::t('app', 'User Details');
                     'showFooter' => true, // 启用底部汇总行
                     'columns' => [
                         ['class' => CheckboxColumn::className()],
-                        [
-                            'class' => DateColumn::className(),
-                            'attribute' => 'date',
-                        ],
+                       
                         [
                             'attribute'=>'userid',
                             'filter'=>false,
@@ -69,6 +73,10 @@ $this->params['breadcrumbs'][] = yii::t('app', 'User Details');
                         ],
                         'income',
                         'expenses',
+                        [
+                            'class' => DateColumn::className(),
+                            'attribute' => 'date',
+                        ],
                         'remark:ntext',
                         [
                             'class' => DateColumn::className(),
