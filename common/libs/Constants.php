@@ -39,6 +39,7 @@ class Constants
     const COMMENT_PUBLISH = 1;
     const COMMENT_RUBISSH = 2;
 
+    const SUPERID = [1];
     public static function getCommentStatusItems($key = null)
     {
         $items = [
