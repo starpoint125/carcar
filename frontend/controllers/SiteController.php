@@ -14,6 +14,7 @@ use frontend\models\form\PasswordResetRequestForm;
 use frontend\models\form\ResetPasswordForm;
 use frontend\models\form\SignupForm;
 use yii\base\InvalidParamException;
+use common\models\RegistUsers;
 use yii\helpers\Html;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
@@ -246,5 +247,16 @@ class SiteController extends Controller
             ]);
         }
     }
-
+    
+    public function actionRegister()
+    {
+        $model = new RegistUsers();
+        if ($model->load(Yii::$app->getRequest()->post()) && $model->validate() && $model->save()) {
+            Yii::$app->getSession()->setFlash('success','报名成功,请等待客服电话回访！');
+            $this->redirect( Yii::$app->getRequest()->getReferrer() );
+        }
+        return $this->render('register', [
+            'model' => $model,
+        ]);
+    }
 }
