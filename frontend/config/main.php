@@ -41,8 +41,8 @@ return [
                         'yii\debug\Module::checkAccess',
                     ],
                     'message' => [
-                        'to' => ['admin@feehi.com', 'liufee@126.com'],//当触发levels配置的错误级别时，发送到此些邮箱（请改成自己的邮箱）
-                        'subject' => '来自 Feehi CMS 前台的新日志消息',
+                        'to' => ['admin@feehi.com'],//当触发levels配置的错误级别时，发送到此些邮箱（请改成自己的邮箱）
+                        'subject' => '来自 云信链 的新日志消息',
                     ],
                 ],
             ],
@@ -55,10 +55,10 @@ return [
             'keyPrefix' => 'frontend',       // 唯一键前缀
         ],
         'urlManager' => [
-            'enablePrettyUrl' => false,//true 美化路由(注:需要配合web服务器配置伪静态，详见http://doc.feehi.com/install.html), false 不美化路由
+            'enablePrettyUrl' => true,//true 美化路由(注:需要配合web服务器配置伪静态，详见http://doc.feehi.com/install.html), false 不美化路由
             'showScriptName' => false,//隐藏index.php
             'enableStrictParsing' => false,
-            //'suffix' => '.html',//后缀，如果设置了此项，那么浏览器地址栏就必须带上.html后缀，否则会报404错误
+            'suffix' => '.html',//后缀，如果设置了此项，那么浏览器地址栏就必须带上.html后缀，否则会报404错误
             'rules' => [
                 //'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
                 //'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>?id=<id>'

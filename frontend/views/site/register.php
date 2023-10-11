@@ -48,9 +48,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <?= $form->field($model, 'address', ['template' => "<div style='position:relative'>{label}{input}\n{error}\n{hint}</div>"])->textInput(['autofocus' => true]) ?>
 
-            <?= $form->field($model, 'remark', ['template' => "<div style='position:relative'>{label}{input}\n{error}\n{hint}</div>"])->textInput(['autofocus' => true]) ?>
+            <?= $form->field($model, 'remark', ['template' => "<div style='position:relative'>{label}{input}\n{error}\n{hint}</div>"])->textarea(['autofocus' => true]) ?>
            
-
             <div class="form-group" style="margin-right: 50px">
                 <?= Html::submitButton(Yii::t('frontend', '立即报名'), ['class' => 'btn btn-primary', 'name' => '立即报名']) ?>
             </div>
