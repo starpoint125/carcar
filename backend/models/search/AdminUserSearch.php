@@ -62,6 +62,7 @@ class AdminUserSearch extends AdminUser implements SearchInterface
         }
         $query->andFilterWhere(['like', 'username', $this->username])
             ->andFilterWhere(['like', 'email', $this->email])
+            ->andFilterWhere(['<>', 'id', 1])
             ->andFilterWhere(['status' => $this->status]);
 
         $this->trigger(SearchEvent::BEFORE_SEARCH, Yii::createObject([ 'class' => SearchEvent::className(), 'query'=>$query]));
