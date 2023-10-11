@@ -33,19 +33,19 @@ $userId = Yii::$app->user->identity->id;
                         <a class="btn btn-white btn-sm multi-back" href="<?=Yii::$app->urlManager->createUrl(['user/index'])?>" title="返回">
                             <i class="fa fa-back"></i> 返回
                         </a>
+                        <a class="btn btn-white btn-sm refresh" href="<?=Yii::$app->urlManager->createUrl(['user-details/refresh'])?>" title="刷新" data-pjax="0">
+                            <i class="fa fa-refresh"></i> 刷新
+                        </a> 
+                        <a class="btn btn-white btn-sm" href="<?=Yii::$app->urlManager->createUrl(['user-details/create','userid'=>Yii::$app->request->get('userid'),'bdcar'=>Yii::$app->request->get('bdcar')])?>" title="创建" data-pjax="0">
+                            <i class="fa fa-plus"></i> 创建
+                        </a> 
+                        <a style="display: ;" class="btn btn-white btn-sm multi-operate" href="<?=Yii::$app->urlManager->createUrl(['user-details/delete'])?>" title="删除" data-pjax="0" data-confirm="真的要删除吗？">
+                            <i class="fa fa-trash-o"></i> 删除
+                        </a>
                     <?php
                         }
                     ?>
                     
-                    <a class="btn btn-white btn-sm refresh" href="<?=Yii::$app->urlManager->createUrl(['user-details/refresh'])?>" title="刷新" data-pjax="0">
-                        <i class="fa fa-refresh"></i> 刷新
-                    </a> 
-                    <a class="btn btn-white btn-sm" href="<?=Yii::$app->urlManager->createUrl(['user-details/create','userid'=>Yii::$app->request->get('userid'),'bdcar'=>Yii::$app->request->get('bdcar')])?>" title="创建" data-pjax="0">
-                        <i class="fa fa-plus"></i> 创建
-                    </a> 
-                    <a style="display: ;" class="btn btn-white btn-sm multi-operate" href="<?=Yii::$app->urlManager->createUrl(['user-details/delete'])?>" title="删除" data-pjax="0" data-confirm="真的要删除吗？">
-                        <i class="fa fa-trash-o"></i> 删除
-                    </a>
                 </div>
                 <?php //$this->render('_search', ['model' => $searchModel]); ?>
                 <?= GridView::widget([
