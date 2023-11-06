@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = yii::t('app', 'Regist Users');
                             'value' => function ($model) {
                                 if (!empty($model->uid)) {
                                     $username = User::findOne($model->uid);
-                                    return $username;
+                                    return $username->username;
                                 }else{
                                     return '';
                                 }
