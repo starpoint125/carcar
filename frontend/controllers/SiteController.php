@@ -250,13 +250,16 @@ class SiteController extends Controller
     
     public function actionRegister()
     {
+        $uid = Yii::$app->getRequest()->get('id');
         $model = new RegistUsers();
+       
         if ($model->load(Yii::$app->getRequest()->post()) && $model->validate() && $model->save()) {
-            Yii::$app->getSession()->setFlash('success','报名成功,请等待客服电话回访！');
+            Yii::$app->getSession()->setFlash('success', Yii::t('app', 'name success waiting phone'));
             $this->redirect( Yii::$app->getRequest()->getReferrer() );
         }
         return $this->render('register', [
             'model' => $model,
+            'uid' => $uid,
         ]);
     }
 }

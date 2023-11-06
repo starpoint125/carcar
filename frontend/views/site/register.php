@@ -39,9 +39,16 @@ $this->params['breadcrumbs'][] = $this->title;
         color:red;
     }
 </style>
+<?php if (Yii::$app->session->hasFlash('success')): ?>
+    <?= \yii\bootstrap\Alert::widget([
+        'options' => ['class' => 'alert-success'],
+        'body' => Yii::$app->session->getFlash('success'),
+    ]) ?>
+<?php endif; ?>
 <div class="content-wrap ">
         <legend>基本信息</legend>
         <?php $form = ActiveForm::begin(['id' => 'form-login']); ?>
+            <?= Html::activeHiddenInput($model,'uid',['value'=>$uid]) ?>
             <?= $form->field($model, 'name', ['template' => "<div style='position:relative'>{label}{input}\n{error}\n{hint}</div>"])->textInput(['autofocus' => true]) ?>
 
             <?= $form->field($model, 'phone', ['template' => "<div style='position:relative'>{label}{input}\n{error}\n{hint}</div>"])->textInput(['autofocus' => true,'maxlength'=>11]) ?>
