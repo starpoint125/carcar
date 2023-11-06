@@ -25,6 +25,7 @@ $this->params['breadcrumbs'][] = yii::t('app', 'Regist Users');
                     'dataProvider' => $dataProvider,
                     'filterModel' => $searchModel,
                     'columns' => [
+                        
                         ['class' => CheckboxColumn::className()],
                         'id',
                         'name',
