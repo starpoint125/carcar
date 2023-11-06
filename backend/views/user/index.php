@@ -58,6 +58,20 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Users');
                             }
                         ],
                         [
+                            'attribute' => 'mpic',
+                            'format' => 'raw',
+                            'width' => '80',
+                            'value' => function($model){
+                                if ($model->mpic) {
+                                    // return "<img class='img-responsive' src='{$model->mpic}'>";
+                                    return "<a href='{$model->mpic}' download><img class='img-responsive' src='{$model->mpic}'></a>";
+                                }else{
+                                    // $url = Yii::$app->urlManager->createUrl(['user/mpic', 'uid' => $model->id]);
+                                    return "<a href='#' class='ma' uid='{$model->id}'>生成二维码</a>";
+                                }
+                            }
+                        ],
+                        [
                             'attribute' => 'status',
                             'label' => Yii::t('app', 'Status'),
                             'value' => function ($model) {
@@ -122,6 +136,34 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Users');
         </div>
     <?php endforeach; ?>
 </div>
+<?php
+    $ajaxUrls = Yii::$app->urlManager->createUrl(['user/mpic']); 
+    $jss = <<<JS
+        $('.ma').click(function () {
+            var uid = $(this).attr('uid'); // 获取数据ID
+            $.ajax({
+                url: '$ajaxUrls',
+                type: 'POST',
+                data: {uid: uid}, // 传递所选值到API
+                success: function (response) {
+                    // 处理接口响应
+                    if (response.success) {
+                        $('#flash-container').html('<div class="alert alert-success">' + response.successMessage + '</div>');
+                        // 成功后刷新当前页
+                        location.reload();
+                    }
+                    console.log(response);
+                    // 在这里你可以执行其他操作，例如显示响应数据、刷新GridView等
+                },
+                error: function (xhr, status, error) {
+                    console.error(error);
+                }
+            });
+        });
+    JS;
+    $this->registerJs($jss);
+?>
+
 <?php
     /**
      * 用户绑定车辆

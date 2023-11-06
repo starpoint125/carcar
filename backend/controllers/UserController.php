@@ -35,11 +35,11 @@ class UserController extends \yii\web\Controller
     /**
      * @auth
      * - item group=用户 category=前台用户 description-get=列表 sort=400 method=get
-     * - item group=用户 category=前台用户 description-get=查看 sort=401 method=get  
-     * - item group=用户 category=前台用户 description=创建 sort-get=402 sort-post=403 method=get,post  
-     * - item group=用户 category=前台用户 description=修改 sort-get=404 sort-post=405 method=get,post  
-     * - item group=用户 category=前台用户 description-post=删除 sort=406 method=post  
-     * - item group=用户 category=前台用户 description-post=排序 sort=407 method=post  
+     * - item group=用户 category=前台用户 description-get=查看 sort=401 method=get
+     * - item group=用户 category=前台用户 description=创建 sort-get=402 sort-post=403 method=get,post
+     * - item group=用户 category=前台用户 description=修改 sort-get=404 sort-post=405 method=get,post
+     * - item group=用户 category=前台用户 description-post=删除 sort=406 method=post
+     * - item group=用户 category=前台用户 description-post=排序 sort=407 method=post
      * @return array
      * @throws \yii\base\InvalidConfigException
      */
@@ -137,5 +137,22 @@ class UserController extends \yii\web\Controller
            
         }
         return ['success' => false, 'error' => 'Invalid request.'];
+    }
+    /**
+     * 生成二维码
+     */
+    public function  actionMpic(){
+        $uid =  Yii::$app->request->post('uid');
+        $url = Yii::$app->request->hostInfo . '/site/register.html?id='.$uid;
+        $data['cashier']['url']='https://api.pwmqr.com/qrcode/create/?url='.urlencode($url);
+        $data['cashier']['downUrl']='https://api.pwmqr.com/qrcode/create/?url='.urlencode($url)."&down=1";
+        if ($uid) {
+            $model = User::findOne($uid);
+            $model->mpic = $data['cashier']['downUrl'];
+            $model->save();
+            return ['success' => true];
+        }else {
+            return ['success' => false, 'error' => 'Failed to save the data.'];
+        }
     }
 }
