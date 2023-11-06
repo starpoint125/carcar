@@ -37,6 +37,20 @@ use yii\widgets\DetailView;
                 }
             }
         ],
+        [
+            'attribute' => 'mpic',
+            'format' => 'raw',
+            'value' => function($model){
+                if ($model->mpic) {
+                    return "<a href='{$model->mpic}' download><img class='img-responsive' style='max-width:100px;max-height:100px' src='{$model->mpic}'></a>";
+                }else{
+                    return "";
+                }
+            }
+        ],
+        'money',
+        'lu_money',
+        'passport',
         'created_at:datetime',
         'updated_at:datetime',
     ],

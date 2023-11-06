@@ -62,13 +62,16 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
-            [['username', 'password', 'repassword'], 'string'],
+            [['username', 'password', 'repassword','mpic','passport'], 'string'],
+            [['money', 'lu_money'], 'number'],
+            [['money', 'lu_money'], 'match', 'pattern' => '/^\d+(\.\d{1,2})?$/', 'message' => 'Invalid currency format. Use up to 2 decimal places.'],
+    
             [['avatar'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg, jpeg, gif, webp'],
             [['username', 'email','idcard'], 'unique'],
             ['email', 'email'],
             [['repassword'], 'compare', 'compareAttribute' => 'password'],
             [['status'], 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
-            [['username', 'email', 'password', 'repassword','idcard'], 'required', 'on' => ['create']],
+            [['username', 'money','password', 'repassword','idcard'], 'required', 'on' => ['create']],
             [['username', 'email'], 'required', 'on' => ['update']],
         ];
     }
@@ -89,6 +92,10 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
             'idcard' => Yii::t('app', 'Idcard'),
             'created_at' => Yii::t('app', 'Created At'),
             'updated_at' => Yii::t('app', 'Updated At'),
+            'mpic' => '二维码',
+            'money' => '租金',
+            'lu_money' => '路保',
+            'passport' => '平台',
         ];
     }
 

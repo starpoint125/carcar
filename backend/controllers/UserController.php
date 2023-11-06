@@ -19,6 +19,9 @@ use backend\actions\SortAction;
 use common\models\User;
 use backend\models\form\Management;
 use yii\web\Response;
+use yii\helpers\Html;
+use yii\helpers\Url;
+use Da\QrCode\QrCode;
 /**
  * User management
  * - data:
@@ -154,5 +157,44 @@ class UserController extends \yii\web\Controller
         }else {
             return ['success' => false, 'error' => 'Failed to save the data.'];
         }
+    }
+
+    public function actionDapic()
+    {
+        header('Content-Type: image/png');//解决输出乱码
+        $qrcode = new QrCode('http://www.baidu.com');
+        $qrcode->setSize(300);
+        $code = $qrcode->writestring();
+        exit($code);
+        // // 定义二维码内容和海报图片路径
+        // $qrCodeContent = 'https://example.com'; // 二维码内容
+        // $posterImagePath = 'path_to_poster_image.jpg'; // 海报图片路径
+        // // 创建二维码
+        // QRcode::png($qrCodeContent, Yii::getAlias('@web/uploads/temp_qr_code.png'), 'H', 4);
+
+        // // 打开生成的二维码图片和海报图片
+        // $qrCodeImage = imagecreatefrompng(Yii::getAlias('@web/uploads/temp_qr_code.png'));
+        // $posterImage = imagecreatefromjpeg($posterImagePath);
+
+        // // 获取二维码和海报图片的宽度和高度
+        // $qrCodeWidth = imagesx($qrCodeImage);
+        // $qrCodeHeight = imagesy($qrCodeImage);
+        // $posterWidth = imagesx($posterImage);
+        // $posterHeight = imagesy($posterImage);
+
+        // // 计算海报位置
+        // $offsetX = $qrCodeWidth - $posterWidth; // 二维码右下角横坐标
+        // $offsetY = $qrCodeHeight - $posterHeight; // 二维码右下角纵坐标
+
+        // // 合并二维码和海报
+        // imagecopy($qrCodeImage, $posterImage, $offsetX, $offsetY, 0, 0, $posterWidth, $posterHeight);
+
+        // // 保存合并后的二维码带海报图片
+        // imagepng($qrCodeImage, Yii::getAlias('@web/uploads/qr_code_with_poster.png'));
+
+        // // 渲染视图并显示带有海报的二维码图片
+        // return $this->render('qrCodeWithPoster', [
+        //     'qrCodeImageUrl' => Url::to('@web/uploads/qr_code_with_poster.png', true),
+        // ]);
     }
 }

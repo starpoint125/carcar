@@ -30,7 +30,7 @@ class UserSearch extends User implements SearchInterface
     public function rules()
     {
         return [
-            [['username', 'email','idcard', 'created_at', 'updated_at'], 'string'],
+            [['username', 'email','idcard', 'created_at', 'updated_at','passport','money','lu_money'], 'string'],
             ['status', 'integer'],
         ];
     }
@@ -63,6 +63,7 @@ class UserSearch extends User implements SearchInterface
         $query->andFilterWhere(['like', 'username', $this->username])
             ->andFilterWhere(['like', 'email', $this->email])
             ->andFilterWhere(['like', 'idcard', $this->idcard])
+            ->andFilterWhere(['like', 'money', $this->money])
             ->andFilterWhere(['=', 'status', $this->status]);
 
         $this->trigger(SearchEvent::BEFORE_SEARCH, Yii::createObject([ 'class' => SearchEvent::className(), 'query'=>$query]));

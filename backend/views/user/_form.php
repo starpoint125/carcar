@@ -36,6 +36,12 @@ $this->title = 'User';
             <div class="hr-line-dashed"></div>
             <?= $form->field($model, 'idcard')->textInput() ?>
             <div class="hr-line-dashed"></div>
+            <?= $form->field($model, 'money')->textInput() ?>
+            <div class="hr-line-dashed"></div>
+            <?= $form->field($model, 'lu_money')->textInput() ?>
+            <div class="hr-line-dashed"></div>
+            <?= $form->field($model, 'passport')->textInput() ?>
+            <div class="hr-line-dashed"></div>
             <?= $form->field($model, 'avatar')->imgInput(['width'=>150,'height'=>150]) ?>
             <div class="hr-line-dashed"></div>
             <?= $form->field($model, 'email')->textInput(['maxlength' => 64]) ?>

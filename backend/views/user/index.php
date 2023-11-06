@@ -50,13 +50,13 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Users');
                             'width' => '80',
                             'attribute' => 'username',
                         ],
-                        [
-                            'attribute' => 'avatar',
-                            'format' => 'raw',
-                            'value' => function($model){
-                                return "<img class='img-responsive' src='{$model->avatar}'>";
-                            }
-                        ],
+                        // [
+                        //     'attribute' => 'avatar',
+                        //     'format' => 'raw',
+                        //     'value' => function($model){
+                        //         return "<img class='img-responsive' src='{$model->avatar}'>";
+                        //     }
+                        // ],
                         [
                             'attribute' => 'mpic',
                             'format' => 'raw',
@@ -84,7 +84,7 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Users');
                             'filter' => User::getStatuses(),
                         ],
                         [
-                            'width' => '130',
+                            'width' => '100',
                             'attribute' => 'idcard',
                         ],
                         [
@@ -102,9 +102,11 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Users');
                                 return $select;
                             },
                         ],
+                        'money',
                         [
                             'label' => '消费明细',
                             'format' => 'raw',
+                            'width' => '80',
                             'value' => function ($model) {
                                 if ($model->bdcar != '') {
                                     // 生成链接到自定义页面的超链接
