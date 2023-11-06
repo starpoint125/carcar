@@ -7,6 +7,7 @@ use backend\grid\GridView;
 
 use backend\grid\DateColumn;
 use common\libs\Constants;
+use common\models\User;
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\search\RegistUsersSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -29,6 +30,17 @@ $this->params['breadcrumbs'][] = yii::t('app', 'Regist Users');
                         'name',
                         'phone',
                         'address',
+                        [
+                            'attribute' => 'uid',
+                            'value' => function ($model) {
+                                if (!empty($model->uid)) {
+                                    $username = User::findOne($model->uid);
+                                    return $username;
+                                }else{
+                                    return '';
+                                }
+                            },
+                        ],
                         [
                             'attribute' => 'status',
                             'value' => function($model){

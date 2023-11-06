@@ -18,7 +18,7 @@ class RegistUsersSearch extends RegistUsers implements \backend\models\search\Se
     public function rules()
     {
         return [
-            [['id', 'status'], 'integer'],
+            [['id', 'status','uid'], 'integer'],
             [['name', 'phone', 'address', 'created_at','remark'], 'safe'],
         ];
     }
@@ -77,6 +77,7 @@ class RegistUsersSearch extends RegistUsers implements \backend\models\search\Se
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'phone', $this->phone])
             ->andFilterWhere(['like', 'address', $this->address])
+            ->andFilterWhere(['=', 'uid', $this->uid])
             ->andFilterWhere(['like', 'remark', $this->remark]);
         // echo $query->createCommand()->getRawSql();exit;
         return $dataProvider;
