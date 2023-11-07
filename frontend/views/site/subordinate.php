@@ -200,7 +200,7 @@ a{
   font-size: 14px;
   overflow: hidden;
   width: 100%;
-  height: 125px;
+  height: 100%;
   margin:0 auto;
 }
 .pro_quota_tip .tip_box{
