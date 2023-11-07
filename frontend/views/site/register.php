@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-
+use common\models\User;
 $this->title = Yii::t('app', '报名') . '-' . Yii::$app->feehi->website_title;
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -69,6 +69,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php endif; ?>
 <div class="content-wrap ">
         <legend>基本信息</legend>
+        <h5>推荐人：<?php echo User::findIdentity($uid)['username'];?></h5>
         <?php $form = ActiveForm::begin(['id' => 'form-login']); ?>
             <?= Html::activeHiddenInput($model,'uid',['value'=>$uid]) ?>
 
