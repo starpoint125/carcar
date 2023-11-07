@@ -247,7 +247,9 @@ class SiteController extends Controller
             ]);
         }
     }
-    
+    /**
+     * 报名表单
+     */
     public function actionRegister()
     {
         $uid = Yii::$app->getRequest()->get('id');
@@ -260,6 +262,18 @@ class SiteController extends Controller
         return $this->render('register', [
             'model' => $model,
             'uid' => $uid,
+        ]);
+    }
+    /**
+     * 下级列表
+     */
+    public function actionSubordinate(){
+        $uid = Yii::$app->getRequest()->get('uid');
+        $model = new RegistUsers();
+        $data  = $model->find()->where(['uid'=>$uid])->asArray()->all();
+        return $this->render('subordinate',[
+            'model'=> $model,
+            'data' => $data,
         ]);
     }
 }

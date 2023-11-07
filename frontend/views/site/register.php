@@ -82,7 +82,10 @@ $this->params['breadcrumbs'][] = $this->title;
            
             <div class="form-group center-button" >
                 <?= Html::submitButton(Yii::t('frontend', '立即报名'), ['class' => 'btn btn-primary', 'name' => '立即报名']) ?>
-            </div><br><br><br>
+                <?= Html::a(Yii::t('frontend', '推广人订单'), ['site/subordinate','uid'=>$uid],['class' => 'btn btn-primary', 'name' => '推广人订单']) ?>
+            </div>
+           
+            <br><br><br>
         <?php ActiveForm::end(); ?>
 </div>
 <br><br>
