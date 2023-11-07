@@ -48,8 +48,10 @@ use yii\widgets\DetailView;
                 }
             }
         ],
+        
         'money',
         'lu_money',
+        'commission',
         'passport',
         'created_at:datetime',
         'updated_at:datetime',
