@@ -15,6 +15,7 @@
 use backend\grid\DateColumn;
 use backend\grid\GridView;
 use common\models\User;
+use common\models\RegistUsers;
 use backend\models\form\Management;
 use backend\widgets\Bar;
 use backend\grid\CheckboxColumn;
@@ -31,6 +32,7 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Users');
     width: 150px; /* 设置宽度为200px，根据需要进行调整 */
 }
 </style>
+
 <div class="row">
     <div class="col-sm-12">
         <div class="ibox">
@@ -102,8 +104,25 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Users');
                                 return $select;
                             },
                         ],
-                        'money',
-                        'commission',
+                        [
+                            'attribute'=>'money',
+                            'format' => 'raw',
+                            'value'=>function($model){
+                                $regCount = RegistUsers::find()->where(['uid'=>$model->id,'status'=>3])->count();
+                                $ymong = $regCount * Yii::$app->params['commission'];
+                                $money = $model->money - $ymong;
+                                return $money;
+                            },
+                        ],
+                        [
+                            'attribute'=>'commission',
+                            'format' => 'raw',
+                            'value'=>function($model){
+                                $regCount = RegistUsers::find()->where(['uid'=>$model->id,'status'=>3])->count();
+                                $ymong = $regCount * Yii::$app->params['commission'];
+                                return $ymong;
+                            },
+                        ],
                         [
                             'label' => '消费明细',
                             'format' => 'raw',
