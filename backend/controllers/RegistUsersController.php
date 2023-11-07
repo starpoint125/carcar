@@ -11,6 +11,9 @@ use backend\actions\IndexAction;
 use backend\actions\DeleteAction;
 use backend\actions\SortAction;
 use backend\actions\ViewAction;
+use yii\web\Response;
+use common\models\RegistUsers;
+use common\models\User;
 /**
  * RegistUsersController implements the CRUD actions for RegistUsers model.
  */
@@ -94,5 +97,38 @@ class RegistUsersController extends \yii\web\Controller
                 },
             ],
         ];
+    }
+      /**
+     * 更改报名人员状态，同时新建用户
+     */
+    public function actionUpstatus(){
+        Yii::$app->response->format = Response::FORMAT_JSON;
+        if (Yii::$app->getRequest()->getIsPost()) {
+            $id        = Yii::$app->request->post('dataId');
+            $value     = Yii::$app->request->post('selectedValue');
+            $oldStatus = Yii::$app->request->post('oldStatus');
+            $model     = RegistUsers::findOne($id);
+            if ($model !== null) {
+                $model->status = $value;
+                if ($model->save()) {
+                    if ($model->status == 3) {
+                        $userModel                = new User();
+                        $userModel->username      = $model->name;
+                        $userModel->auth_key      = 'CVsVU8nvWEldP0F6SlSfACEe8mRXb--N';
+                        $userModel->password_hash = '$2y$13$oKocgpXqtKkhbFgPigtqCuHVCTEdidMoagTGfgSod.4JMO1jjbh/.';
+                        $userModel->created_at    = time();
+                        $userModel->updated_at    = time();
+                        $userModel->save();
+                    }
+                    return ['success' => true];
+                } else {
+                    return ['success' => false, 'error' => 'Failed to save the data.'];
+                }
+            }else {
+                return ['success' => false, 'error' => 'User not found.'];
+            }
+           
+        }
+        return ['success' => false, 'error' => 'Invalid request.'];
     }
 }

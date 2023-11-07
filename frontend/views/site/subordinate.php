@@ -12,8 +12,9 @@ $this->params['breadcrumbs'][] = $this->title;
       <div class="tp_box">
         <span>姓名</span>
         <span>手机号</span>
+        <span>佣金</span>
         <span>状态</span>
-        <span>时间</span>
+        <!-- <span>时间</span> -->
       </div>
       <div class="pro_quota_tip"> 
         <div class="tip_box"> 
@@ -21,6 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <p rel="external nofollow">
                     <span><?php echo $value['name']; ?></span>
                     <span><?php echo substr($value['phone'], 0, 3) . '****' . substr($value['phone'], -4); ?></span>
+                    <span><?php echo Yii::$app->params['commission']; ?></span>
                     <span>
                         <?php 
                             if ($value['status'] == 1) {
@@ -34,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             }
                         ?>
                     </span>
-                    <span><?php echo date("Y-m-d",$value['created_at']); ?></span>
+                    <!-- <span><?php //echo date("Y-m-d",$value['created_at']); ?></span> -->
                 </p>
             <?php endforeach; ?>
         </div> 
@@ -100,7 +102,7 @@ a{
 .box{
   padding-top: 10px;
   width: 35%;
-  height: 600px;
+  height: 1000px;
   display: block;
   margin-right: auto;
   margin-left: auto;
