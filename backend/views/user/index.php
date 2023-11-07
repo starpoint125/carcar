@@ -103,6 +103,7 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Users');
                             },
                         ],
                         'money',
+                        'commission',
                         [
                             'label' => '消费明细',
                             'format' => 'raw',

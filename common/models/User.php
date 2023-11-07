@@ -63,8 +63,8 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     {
         return [
             [['username', 'password', 'repassword','mpic','passport'], 'string'],
-            [['money', 'lu_money'], 'number'],
-            [['money', 'lu_money'], 'match', 'pattern' => '/^\d+(\.\d{1,2})?$/', 'message' => 'Invalid currency format. Use up to 2 decimal places.'],
+            [['money', 'lu_money','commission'], 'number'],
+            [['money', 'lu_money','commission'], 'match', 'pattern' => '/^\d+(\.\d{1,2})?$/', 'message' => 'Invalid currency format. Use up to 2 decimal places.'],
     
             [['avatar'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg, jpeg, gif, webp'],
             [['username', 'email','idcard'], 'unique'],
@@ -96,6 +96,7 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
             'money' => '租金',
             'lu_money' => '路保',
             'passport' => '平台',
+            'commission' => '佣金',
         ];
     }
 

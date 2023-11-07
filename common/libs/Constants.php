@@ -281,6 +281,7 @@ class Constants
             0 => '正常',
             1 => '有意向',
             2 => '无意向',
+            3 => '已上车',
         ];
         return self::getItems($items, $key);
     }
