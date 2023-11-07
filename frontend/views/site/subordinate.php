@@ -13,6 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <span>姓名</span>
         <span>手机号</span>
         <span>状态</span>
+        <span>时间</span>
       </div>
       <div class="pro_quota_tip"> 
         <div class="tip_box"> 
@@ -33,6 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             }
                         ?>
                     </span>
+                    <span><?php echo date("Y-m-d",$value['created_at']); ?></span>
                 </p>
             <?php endforeach; ?>
         </div> 

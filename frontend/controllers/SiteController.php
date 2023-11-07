@@ -270,7 +270,7 @@ class SiteController extends Controller
     public function actionSubordinate(){
         $uid = Yii::$app->getRequest()->get('uid');
         $model = new RegistUsers();
-        $data  = $model->find()->where(['uid'=>$uid])->asArray()->all();
+        $data  = $model->find()->where(['uid'=>$uid])->orderBy('id desc')->asArray()->all();
         return $this->render('subordinate',[
             'model'=> $model,
             'data' => $data,
