@@ -100,7 +100,7 @@ a{
 .box{
   padding-top: 10px;
   width: 35%;
-  /*height: 600px;*/
+  height: 600px;
   display: block;
   margin-right: auto;
   margin-left: auto;
